@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김지은 이력서</title>
+  <meta name="description" content="프론트엔드 개발자 이력서 및 경력기술서">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero" id="hero">
+      <h1 class="hero__name">김지은</h1>
+      <p class="hero__role">Frontend Engineer</p>
+      <p class="hero__desc">
+        <strong>비즈니스의 복잡한 문제를 직관적이고 안정적인 UI/UX로 해결해 내는 프론트엔드 개발자 김지은 입니다.</strong><br /><br />
+
+        지난 2년여간 React와 TypeScript 기반의 클라우드/B2B 솔루션 환경에서 실무 효율을 높이는 프로덕트를 개발하며 현장 감각을 탄탄하게 다져왔습니다. 기존 서비스의 유지보수부터 복잡한
+        신규도메인 설계까지 단계적으로 역할을 확장해 오며, 요구사항의 이면을 파악하고 기획의 빈틈을 메우는 능력을 길렀습니다. <br /><br /> 개발하면서 제가 가장 고민한 것은 '유지보수하기 좋은
+        구조'였습니다.
+        당장의 기능
+        구현에 만족하기보다는 컴포넌트의 재사용성을 높이고 비즈니스 로직과 UI를 분리하는 등, 시간이 지나 다른 동료가 보아도
+        쉽게 이해하고 확장할 수 있는 코드를 작성하고자 노력합니다.
+
+      </p>
+      <div class="hero__contacts">
+        <span class="hero__contact-text"><a href="mailto:hong@example.com">jisilver.kim@gmail.com</a></span>
+        <span class="hero__contact-sep">|</span>
+
+        <span class="hero__contact-text"><a href="tel:010-1234-5678">010-3724-9688</a></span>
+        <span class="hero__contact-sep">|</span>
+        <span class="hero__contact-text"><a href="https://github.com/ji-silver" target="_blank">GitHub</a></span>
+        <span class="hero__contact-sep">|</span>
+        <span class="hero__contact-text"><a href="https://jisilver-k.tistory.com/" target="_blank">Blog</a></span>
+      </div>
+    </section>
+
+    <!-- 프로젝트 -->
+    <section class="section" id="projects">
+      <div class="section__header">
+        <h2 class="section__title">프로젝트</h2>
+      </div>
+
+      <div class="details-section">
+        <h3 class="details-section__title">제조 AI 데이터 통합·중계 플랫폼</h3>
+
+        <p class="details-section__meta">2025.05 ~ 2026.02 | 자체 플랫폼 R&D | 씨에이웨이브 근무</p>
+
+        <p class="details-section__body">제조 데이터를 수집·연계·관리하고, 데이터 탐색 및 검증 기능을 제공하는 데이터 허브 플랫폼 프로젝트 </p>
+
+        <ul class="details-section__list">
+          <li>사용자 역할에 따라 관리자 메뉴 노출 여부와 /admin 하위 라우트 접근을 제어하는 권한 기반 라우팅 구현</b></li>
+          <li>다중 포맷 데이터 미리보기 기능을 개발하여 연계 데이터의 탐색 편의성 개선</li>
+          <li>React Query와 Zustand를 활용하여 API 조회, 로딩/에러 처리, 권한 정보 및 공통 상태 관리 적용</li>
+          <li>Vitest + RTL 기반 단위·컴포넌트 테스트 환경을 구성하고 주요 기능의 테스트 코드 작성</li>
+          <li>Zod를 활용한 폼 검증 스키마를 설계하여 입력 조건이 동적으로 변하는 폼의 유효성 검증 통일</li>
+
+        </ul>
+        <div class="tech-chips">
+          <span class="tech-chip">React</span>
+          <span class="tech-chip">TypeScript</span>
+          <span class="tech-chip">Tailwind CSS</span>
+          <span class="tech-chip">Zustand</span>
+          <span class="tech-chip">React Query</span>
+          <span class="tech-chip">Vitest</span>
+          <span class="tech-chip">React Testing Library</span>
+          <span class="tech-chip">React Hook Form</span>
+          <span class="tech-chip">Zod</span>
+        </div>
+        <button class="details-toggle" data-modal="project-1" onclick="openModal(this)">상세보기</button>
+
+      </div>
+
+      <div class="details-section">
+        <h3 class="details-section__title">클라우드 기반 병리 데이터 안심분석구역 솔루션 기능 개선</h3>
+        <p class="details-section__meta">2024.05 ~ 2024.10 | 한양대학교병원, 서울성모병원 | 씨에이웨이브 근무</p>
+        <p class="details-section__body">연구자가 병리 데이터를 분석하고, 결과 반출 및 비용 정산을 수행할 수 있도록 지원하는 안심분석구역 솔루션 프로젝트 기능 확장·개선
+        </p>
+
+        <ul class="details-section__list">
+          <li>세금계산서 정산 관련 목록, 상세, 발행 요청, 상태 조회, 과금 조회 및 API 연동</li>
+          <li>데이터 활용 신청 및 연구 결과 반출 신청 프로세스 화면 개선</li>
+          <li>클라우드 자원 분석, 데이터 활용/반출 신청 현황을 확인할 수 있는 대시보드 UI 구성</li>
+        </ul>
+        <div class="tech-chips">
+          <span class="tech-chip">React</span>
+          <span class="tech-chip">TypeScript</span>
+          <span class="tech-chip">Tailwind CSS</span>
+          <span class="tech-chip">React Query</span>
+          <span class="tech-chip">React Hook Form</span>
+        </div>
+      </div>
+
+      <div class="details-section">
+        <h3 class="details-section__title">클라우드 기반 원격접속·감사 솔루션 프론트엔드 기능 개선</h3>
+        <p class="details-section__meta">2025.03 ~ 2025.04 | 기아자동차 KCVG 시스템 | 씨에이웨이브 근무</p>
+        <p class="details-section__body">클라우드 기반 원격접속·감사 솔루션의 운영 중 발생한 결함을 수정해 화면 안정성 개선</p>
+
+        <ul class="details-section__list">
+          <li>사용자 대시보드, 원격접속 신청, 장비/커넥트 설정 등 주요 화면의 입력 검증 및 예외 처리 로직 보강</li>
+          <li>파일 첨부 기능의 업로드·삭제·개수 제한 등 엣지 케이스 대응 로직 구현</li>
+          <li>2차 인증·세션 만료·비밀번호 만료 등 인증 플로우 UI 안정화</li>
+        </ul>
+        <div class="tech-chips">
+          <span class="tech-chip">React</span>
+          <span class="tech-chip">TypeScript</span>
+          <span class="tech-chip">Tailwind CSS</span>
+          <span class="tech-chip">React Hook Form</span>
+        </div>
+      </div>
+
+
+      <div class="details-section">
+        <h3 class="details-section__title">클라우드 빌링 솔루션 기능 개선 및 운영</h3>
+        <p class="details-section__meta">2024.03 ~ 현재 | ㈜씨에이웨이브, ㈜아이티아이즈 | 씨에이웨이브 근무</p>
+        <p class="details-section__body">기존 클라우드 빌링 솔루션의 운영 안정성과 사용자 편의성 개선을 위한 프로젝트</p>
+
+        <ul class="details-section__list">
+          <li>2차 인증(2FA) 시스템의 편의성 개선을 위한 인증 수단 등록 및 해제 관리 기능 구현</li>
+          <li>RBAC 기반 관리자 페이지 신규 구축 (자원, 권한, 역할관리)</li>
+          <li>Zod, React Hook Form 기반 폼 검증 아키텍처 설계</li>
+          <li>복잡한 단일 페이지 구조를 업무 시나리오 기반 탭 구조로 전환하여 UI/UX 개선</li>
+          <li>React Query 기반 API 연동 및 비즈니스 에러코드 통합 핸들링 시스템 구축</li>
+        </ul>
+        <div class="tech-chips">
+          <span class="tech-chip">React</span>
+          <span class="tech-chip">TypeScript</span>
+          <span class="tech-chip">Tailwind CSS</span>
+          <span class="tech-chip">Zustand</span>
+          <span class="tech-chip">React Query</span>
+          <span class="tech-chip">React Hook Form</span>
+          <span class="tech-chip">Zod</span>
+        </div>
+        <button class="details-toggle" data-modal="project-4" onclick="openModal(this)">상세보기</button>
+
+      </div>
+
+    </section>
+
+    <!-- 경력 -->
+    <section class="section" id="career">
+      <div class="section__header">
+        <h2 class="section__title">경력</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-item__dot timeline-item__dot--active"></div>
+          <div class="timeline-item__header">
+            <div class="timeline-item__company">(주)씨에이웨이브</div>
+            <div class="timeline-item__role">개발팀 주임</div>
+          </div>
+          <div class="timeline-item__meta">
+            <span class="timeline-item__period">2024.03 - 재직 중 (2년 3개월)</span>
+          </div>
+          <div class="timeline-item__achievements">
+            <div class="timeline-item__achievement">클라우드/B2B 업무 솔루션 프론트엔드 개발</div>
+            <div class="timeline-item__achievement">서비스 기능 개선, API 연동, 상태 관리 및 UI 사용성 개선</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-item__dot"></div>
+          <div class="timeline-item__header">
+            <div class="timeline-item__company">(주)금강기업</div>
+            <div class="timeline-item__role">품질관리 · 영업지원 사원 (비개발)</div>
+          </div>
+          <div class="timeline-item__meta">
+            <span class="timeline-item__period">2021.05 - 2023.02 (1년 10개월)</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-item__dot"></div>
+          <div class="timeline-item__header">
+            <div class="timeline-item__company">(주)평화</div>
+            <div class="timeline-item__role">총무팀 사원 (비개발)</div>
+          </div>
+          <div class="timeline-item__meta">
+            <span class="timeline-item__period">2016.01 - 2017.02 (1년 2개월)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 기술 스택 -->
+    <section class="section" id="skills">
+      <div class="section__header">
+        <h2 class="section__title">기술 스택</h2>
+      </div>
+      <div class="stack-group__tags">
+        <span class="stack-tag">HTML / CSS</span>
+        <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">TypeScript</span>
+        <span class="stack-tag">React</span>
+        <span class="stack-tag">Next.js</span>
+        <span class="stack-tag">Tailwind CSS</span>
+        <span class="stack-tag">Zustand</span>
+        <span class="stack-tag">React Query</span>
+        <span class="stack-tag">Vitest</span>
+        <span class="stack-tag">React Testing Library</span>
+      </div>
+    </section>
+
+
+    <!-- 교육 -->
+    <section class="section" id="education">
+      <div class="section__header">
+        <h2 class="section__title">학력</h2>
+      </div>
+      <div class="simple-item">
+        <div class="simple-item__title">한국방송통신대학교 컴퓨터과학과</div>
+        <div class="simple-item__sub">2024.08 ~ 재학 중(편입)</div>
+      </div>
+      <div class="simple-item">
+        <div class="simple-item__title">엘리스 SW 엔지니어트랙 4기 수료</div>
+        <div class="simple-item__sub">2023.02 ~ 2023.06</div>
+      </div>
+      <div class="simple-item">
+        <div class="simple-item__title">수원여자대학교 모바일미디어과</div>
+        <div class="simple-item__sub">2017.03 ~ 2019.02</div>
+      </div>
+    </section>
+
+    <!-- 자격증 -->
+    <section class="section" id="certificates">
+      <div class="section__header">
+        <h2 class="section__title">자격증</h2>
+      </div>
+      <div class="simple-item">
+        <div class="simple-item__title">정보처리기사</div>
+        <div class="simple-item__sub">2023.11 · 한국산업인력공단</div>
+      </div>
+      <div class="simple-item">
+        <div class="simple-item__title">정보처리산업기사</div>
+        <div class="simple-item__sub">2020.06 · 한국산업인력공단</div>
+      </div>
+    </section>
+
+
+
+  </div>
+
+  <!-- 모달 -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal__close" onclick="closeModal()">&times;</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <template id="project-1">
+    <h2>제조 AI 데이터 통합·중계 플랫폼
+    </h2>
+    <p class="details-section__body">
+      제조 데이터를 수집·연계·관리하고, 데이터 탐색 및 검증 기능을 제공하는 데이터 허브 플랫폼 프로젝트입니다.
+    </p>
+
+    <h2>역할</h2>
+    <p class="details-section__body">
+      요구사항 기반 권한 제어, 데이터 미리보기, 설정 관리, API 연동, 상태 관리, 테스트 환경 구성 등 주요 프론트엔드 기능 개발 </p>
+    <h2>성과</h2>
+    <h3 class="modal__subtitle">프론트엔드 테스트 자동화 도입 (Vitest + React Testing Library)</h3>
+
+    <h5 class="modal__label">원인 분석: <strong>단위 테스트 필요성</strong></h5>
+    <ul class="details-section__list">
+      <li>테스트는 Cypress 기반의 E2E 테스트를 사용하기로 했습니다. 하지만 개발 과정에서 Cypress의 구조적인 무거움이 체감되었습니다.</li>
+      <li>Cypress는 사용자 시나리오 전체를 검증하는 데는 적합하지만, 개발 중에 "이 함수가 제대로 동작하는가?", "이 컴포넌트가 올바르게 렌더링되는가?"를 빠르게 확인하는 용도로는 과도한 도구로 판단하였습니다.</li>
+    </ul>
+
+    <h5 class="modal__label">해결 방법: <strong>테스트 전략 설계 및 도입</strong></h5>
+    <table class="modal__table">
+      <thead>
+        <tr>
+          <th style="width: 25%;">비교 항목</th>
+          <th>Jest</th>
+          <th>Vitest (선택)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Vite 통합</strong></td>
+          <td>babel-jest 변환 필요, 별도 설정 복잡</td>
+          <td>Vite 설정 그대로 공유 (<code>vite.config.ts</code>에 <code>test</code> 블록 추가)</td>
+        </tr>
+        <tr>
+          <td><strong>실행 속도</strong></td>
+          <td>상대적으로 느림</td>
+          <td>ESM 네이티브 지원으로 빠름</td>
+        </tr>
+        <tr>
+          <td><strong>HMR 연동</strong></td>
+          <td>별도 구성 필요</td>
+          <td><code>vitest --watch</code>로 변경 파일만 즉시 재실행</td>
+        </tr>
+        <tr>
+          <td><strong>호환성</strong></td>
+          <td>jest-dom, RTL 완전 호환</td>
+          <td>jest-dom, RTL <strong>동일하게 호환</strong> (<code>@testing-library/jest-dom</code>)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="details-section__body" style="font-size: 0.85rem;">
+      참고로 이미 Vite 기반 프로젝트였기 때문에, 별도의 번들러 설정 없이 <code>vite.config.ts</code>에 <code>test</code> 블록만 추가하면 되는 <strong>Vitest가 도입 비용이 가장 낮았습니다.</strong>
+    </p>
+
+    <h5 class="modal__label">결과</h5>
+    <table class="modal__table">
+      <thead>
+        <tr>
+          <th>지표</th>
+          <th>수치</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>테스트 파일 수</td>
+          <td><strong>70개</strong></td>
+        </tr>
+        <tr>
+          <td>테스트 대상 유형</td>
+          <td>유틸 함수, Zod 스키마, Zustand 스토어, 커스텀 훅, UI 컴포넌트</td>
+        </tr>
+        <tr>
+          <td>테스트 실행 시간</td>
+          <td>전체 약 <strong>2~3초</strong> (Vitest 병렬 실행)</td>
+        </tr>
+        <tr>
+          <td>커버 영역</td>
+          <td>공통 컴포넌트, 폼 검증, 트리 조작, 테이블 서비스, 인증 등</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="details-section__body" style="font-size: 0.85rem;">
+      테스트 자동화 도입으로 버그를 배포 전에 잡게 되었으며 디버깅 시간도 줄었다고 체감하고 있습니다.
+    </p>
+
+  </template>
+
+  <template id="project-4">
+    <h2>클라우드 빌링 솔루션 기능 개선 및 운영</h2>
+    <p class="details-section__body">
+      기존 클라우드 빌링 솔루션의 운영 안정성과 사용자 편의성 개선을 위한 프로젝트입니다.
+    </p>
+
+    <h2>역할</h2>
+    <p class="details-section__body">
+      운영 중인 서비스의 인증/권한 화면, UI, 입력값 검증 등을 개선하여 사용성과 유지보수성을 높이는 업무 수행
+    </p>
+    <h2>성과</h2>
+    <h3 class="modal__subtitle">Zod 도입을 통한 유효성 검사 코드 개선 및 폼 버그 해결</h3>
+
+    <h5 class="modal__label">원인 분석: <strong>복잡한 검증 로직과 개발자 휴먼 에러 발생</strong></h5>
+    <ul class="details-section__list">
+      <li>기존에는 수십 개의 입력 필드가 있는 정산 폼을 개발할 때, 각 UI 컴포넌트의 <code>register</code> 속성에 정규식이나 커스텀 검증 함수를 개발자가 일일이 수동으로 주입해야
+        했습니다.
+      </li>
+      <li>폼이 복잡해질수록 개발자의 실수로 특정 필드에 필수 검증 로직(예: '숫자만 입력 허용' 등)을 누락하는 휴먼 에러가 빈번하게 발생했습니다.</li>
+    </ul>
+
+    <pre class="modal__code"><code>&lt;DetailInput
+  register={form.register('businessField', {
+    ...Object.assign(
+      formValidate.empty('업태는 필수 정보 입니다'),
+      formCount('업태명이 너무 깁니다. (최대 35글자)', 0, 35),
+      formValidate.text('문자, 숫자, 공백, 일부 특수문자만 입력 가능합니다.')
+    ),
+  })}
+/&gt;</code></pre>
+
+    <h5 class="modal__label">해결 방법: <strong>Zod 도입 후 검증 로직 분리</strong></h5>
+    <ul class="details-section__list">
+      <li><code>react-hook-form</code>에 <code>Zod</code> 스키마를 결합하여, 뷰(UI) 컴포넌트 내부에서 검증 로직을 완전히 분리</li>
+      <li>필드별 검증 룰을 최상단의 Zod 스키마(<code>z.object</code>) 한 곳에서만 명세. 개발자가 개별 인풋 컴포넌트에 검증 함수를 달아주는 것을 깜빡하더라도, Zod 스키마가 폼
+        제출을 시스템적으로 차단</li>
+    </ul>
+  </template>
+
+  <!-- 인쇄 버튼 -->
+  <button class="print-btn" onclick="window.print()" title="PDF로 저장">Print</button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
