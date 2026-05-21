@@ -11,8 +11,8 @@
   --color-border-accent: rgba(58, 123, 213, 0.3);
 
   --color-text-primary: #1a1d2e;
-  --color-text-secondary: #4b5563;
-  --color-text-muted: #9ca3af;
+  --color-text-secondary: #374151;
+  --color-text-muted: #767881;
   --color-text-accent: #3a7bd5;
 
   --color-accent: #3a7bd5;
@@ -67,6 +67,11 @@ a {
   transition: color var(--transition-fast);
 }
 
+.highlight {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
 a:hover {
   color: var(--color-accent-light);
 }
@@ -105,14 +110,14 @@ img {
 }
 
 .hero__role {
-  font-size: 1.1rem;
+  font-size: 1.0.89rem;
   font-weight: 500;
   color: var(--color-text-secondary);
   margin-bottom: 18px;
 }
 
 .hero__desc {
-  font-size: 0.92rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.8;
   margin-bottom: 24px;
@@ -123,7 +128,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
-  font-size: 0.85rem;
+  font-size: 0.89rem;
 }
 
 .hero__contact-text a {
@@ -175,7 +180,7 @@ img {
 }
 
 .stack-group__label {
-  font-size: 0.82rem;
+  font-size: 0.89rem;
   font-weight: 600;
   color: var(--color-text-secondary);
   margin-bottom: 10px;
@@ -192,20 +197,19 @@ img {
   background: var(--color-tag-bg);
   border: 1px solid var(--color-tag-border);
   border-radius: 100px;
-  font-size: 0.72rem;
-  font-weight: 500;
+  font-size: 0.89rem;
   color: var(--color-tag-text);
 }
 
 /* ===== 경력 & 프로젝트 좌우 분리 레이아웃 ===== */
 .experience-block {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .experience-block__company {
   flex-shrink: 0;
-  width: 210px;
+  width: 250px;
   position: sticky;
   top: 32px;
   padding: 0;
@@ -213,7 +217,7 @@ img {
 }
 
 .experience-block__company-name {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-text-primary);
   line-height: 1.4;
@@ -221,27 +225,27 @@ img {
 }
 
 .experience-block__role {
-  font-size: 0.82rem;
+  font-size: 0.89rem;
   font-weight: 500;
   color: var(--color-text-accent);
   margin-bottom: 8px;
 }
 
 .experience-block__period {
-  font-size: 0.78rem;
+  font-size: 0.89rem;
   color: var(--color-text-muted);
   line-height: 1.5;
 }
 
 .experience-block__period-wrap {
-  font-size: 0.78rem;
+  font-size: 0.89rem;
   color: var(--color-text-muted);
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
 .experience-block__desc {
-  font-size: 0.78rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.6;
 }
@@ -262,14 +266,14 @@ img {
 }
 
 .details-section__title {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-text-primary);
   margin-bottom: 6px;
 }
 
 .details-section__meta {
-  font-size: 0.8rem;
+  font-size: 0.89rem;
   color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: 6px;
@@ -281,7 +285,7 @@ img {
 }
 
 .details-section__body {
-  font-size: 0.88rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.8;
   margin-bottom: 4px;
@@ -299,7 +303,7 @@ img {
   background: var(--color-tag-bg);
   border: 1px solid var(--color-tag-border);
   border-radius: 100px;
-  font-size: 0.72rem;
+  font-size: 0.89rem;
   font-weight: 500;
   color: var(--color-tag-text);
 }
@@ -309,7 +313,7 @@ img {
 }
 
 .details-section__group-title {
-  font-size: 0.9rem;
+  font-size: 0.89rem;
   font-weight: 600;
   color: var(--color-text-primary);
   margin-bottom: 4px;
@@ -326,7 +330,7 @@ img {
 
 
 .details-section__list li {
-  font-size: 0.84rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
   padding-left: 16px;
@@ -349,7 +353,7 @@ img {
   background: none;
   border: none;
   padding: 0;
-  font-size: 0.82rem;
+  font-size: 0.89rem;
   font-weight: 500;
   color: var(--color-text-accent);
   cursor: pointer;
@@ -392,7 +396,7 @@ img {
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   animation: modalIn 0.25s ease;
-  
+
   /* 스크롤바 숨기기 */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -432,7 +436,7 @@ img {
 }
 
 .modal__content h3 {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-text-primary);
   margin-bottom: 8px;
@@ -455,7 +459,7 @@ img {
 }
 
 .modal__content .details-section__list li {
-  font-size: 0.88rem;
+  font-size: 0.89rem;
   line-height: 1.8;
 }
 
@@ -471,7 +475,7 @@ img {
 }
 
 .modal__label {
-  font-size: 0.88rem;
+  font-size: 0.89rem;
   font-weight: 500;
   color: var(--color-text-secondary);
   margin: 16px 0 8px;
@@ -507,7 +511,7 @@ img {
 
 .modal__code code {
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-  font-size: 0.8rem;
+  font-size: 0.89rem;
   line-height: 1.7;
   color: #24292e;
   background: transparent;
@@ -519,7 +523,7 @@ img {
   width: 100%;
   border-collapse: collapse;
   margin: 16px 0;
-  font-size: 0.85rem;
+  font-size: 0.89rem;
 }
 
 .modal__table th,
@@ -550,13 +554,13 @@ img {
 }
 
 .simple-item__title {
-  font-size: 0.92rem;
+  font-size: 0.89rem;
   font-weight: 600;
   color: var(--color-text-primary);
 }
 
 .simple-item__sub {
-  font-size: 0.8rem;
+  font-size: 0.89rem;
   color: var(--color-text-muted);
   margin-top: 2px;
 }
@@ -604,13 +608,13 @@ img {
 }
 
 .timeline-item__company {
-  font-size: 1.1rem;
+  font-size: 1.0.89rem;
   font-weight: 700;
   color: var(--color-text-primary);
 }
 
 .timeline-item__role {
-  font-size: 0.88rem;
+  font-size: 0.89rem;
   font-weight: 500;
   color: var(--color-text-accent);
   margin-top: 2px;
@@ -625,12 +629,12 @@ img {
 
 .timeline-item__period,
 .timeline-item__team {
-  font-size: 0.78rem;
+  font-size: 0.89rem;
   color: var(--color-text-muted);
 }
 
 .timeline-item__desc {
-  font-size: 0.88rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
   margin-bottom: 16px;
@@ -643,7 +647,7 @@ img {
 }
 
 .timeline-item__achievement {
-  font-size: 0.84rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
   padding-left: 18px;
@@ -655,7 +659,7 @@ img {
   position: absolute;
   left: 0;
   color: var(--color-accent);
-  font-size: 0.8rem;
+  font-size: 0.89rem;
 }
 
 .timeline-item__achievement strong,
@@ -676,7 +680,7 @@ img {
   background: var(--color-tag-bg);
   border: 1px solid var(--color-tag-border);
   border-radius: 100px;
-  font-size: 0.72rem;
+  font-size: 0.89rem;
   font-weight: 500;
   color: var(--color-tag-text);
 }
@@ -710,7 +714,7 @@ img {
 }
 
 .project-card__name {
-  font-size: 1rem;
+  font-size: 0.89rem;
   font-weight: 700;
   color: var(--color-text-primary);
 }
@@ -722,7 +726,7 @@ img {
 }
 
 .project-card__desc {
-  font-size: 0.85rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
   margin-bottom: 14px;
@@ -736,7 +740,7 @@ img {
 }
 
 .project-card__detail {
-  font-size: 0.82rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.6;
   padding-left: 16px;
@@ -768,7 +772,7 @@ img {
 }
 
 .philosophy-item__desc {
-  font-size: 0.85rem;
+  font-size: 0.89rem;
   color: var(--color-text-secondary);
   line-height: 1.8;
 }
@@ -797,7 +801,7 @@ img {
 }
 
 .footer__text {
-  font-size: 0.78rem;
+  font-size: 0.89rem;
   color: var(--color-text-muted);
 }
 
@@ -838,7 +842,7 @@ img {
   }
 
   .hero__role {
-    font-size: 1rem;
+    font-size: 0.89rem;
   }
 
   .hero__contacts {
@@ -896,12 +900,17 @@ img {
   }
 
   .hero {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   .hero__contacts {
     flex-direction: row !important;
     gap: 8px !important;
+  }
+
+  html {
+    font-size: 15.2px;
   }
 
   .section {
@@ -910,8 +919,16 @@ img {
     padding: 20px 0;
   }
 
+  .section__header {
+    margin-bottom: 10px;
+  }
+
   .section__title {
-    font-size: 1.3rem;
+    font-size: 1.55rem;
+  }
+
+  .details-section__title {
+    font-size: 1.1rem;
   }
 
   .details-toggle {
@@ -939,7 +956,8 @@ img {
   }
 
   .experience-block__company-name {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+    font-weight: 800;
   }
 
   .experience-block__desc {
@@ -947,11 +965,27 @@ img {
   }
 
   .experience-block__projects .details-section {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+  }
+
+  .project-divider {
+    margin: 0 0 20px 0 !important;
+  }
+
+  .details-section__group {
     page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   .experience-block__projects .details-section:last-of-type {
     margin-bottom: 0;
+  }
+
+  #skills,
+  #education,
+  #certificates,
+  .simple-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }
