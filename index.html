@@ -4,27 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>프론트엔드 개발자 김지은</title>
-  <meta name="description" content="프론트엔드 개발자 이력서 및 경력기술서">
+  <title>프론트엔드 개발자 김지은 포트폴리오</title>
+  <meta name="description" content="프론트엔드 개발자 김지은의 포트폴리오 - 안전한 구조를 만드는 개발자">
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
   <div class="container">
+
+    <!-- ===== Hero ===== -->
     <section class="hero" id="hero">
       <h1 class="hero__name">김지은</h1>
       <p class="hero__role">Frontend Engineer</p>
+
       <p class="hero__desc">
-        <strong><span class="highlight">기능을 만드는 것에 그치지 않고, 기능이 안전하게 만들어지는 구조를 함께 고민합니다.</span></strong><br /><br />
-
-        개발 과정의 휴먼 에러를 줄이기 위해, 팀원들과 협업하여 검증 로직을 컴포넌트에서 분리하고 스키마 기반의 검증 체계를 함께 구축했습니다. <br />또한 Vitest와 Testing Library 기반의 테스트 환경을 팀에 도입하여 배포 전 버그를 조기에 검출하고, 리팩토링 안정성을 확보했습니다. <br /> 최근에는 팀의 개발 생산성을 높이기 위해 AI 코딩 에이전트의 커스텀 워크플로우를 함께 설계하며, 지속적으로 더 나은 개발 환경을 만들어가는 과정에 기여하고 있습니다.
-
+        <strong><span class="highlight">단순한 기능 구현에 그치지 않고, 시스템이 안전하게 유지되는 구조를 함께 고민합니다.</span></strong><br><br>
+        주어진 화면을 구현하는 것을 넘어 사용자의 예측 불가능한 행동과 서비스의 예외 상황을 사전에 방어하여 견고하고 안정적인 제품을 만드는 것을 지향합니다. 예상치 못한 에러가 발생하더라도 사용자에게는 항상 직관적이고 매끄러운 경험을 제공할 수 있도록 디테일한 예외 처리에 집중합니다.<br><br>
+        또한, 개별 기능의 완성도 못지않게 팀 동료들이 업무에 몰입할 수 있는 개발 환경을 조성하는 것을 중요하게 생각합니다. 소모적인 업무로 인한 팀의 피로도를 낮추고 더 가치 있는 개발에 집중할 수 있도록, 선제적으로 테스트 환경을 구축하고 자동화된 워크플로우를 도입하는 등 팀 전체의 프로세스를 개선하는 일에 앞장서고 있습니다.
       </p>
 
       <div class="hero__contacts">
         <span class="hero__contact-text"><a href="mailto:jisilver.kim@gmail.com">jisilver.kim@gmail.com</a></span>
         <span class="hero__contact-sep">|</span>
-
         <span class="hero__contact-text"><a href="tel:010-3724-9688">010-3724-9688</a></span>
         <span class="hero__contact-sep">|</span>
         <span class="hero__contact-text"><a href="https://github.com/ji-silver" target="_blank">GitHub</a></span>
@@ -33,179 +34,317 @@
       </div>
     </section>
 
-    <!-- 경력 & 프로젝트 -->
-    <section class="section" id="experience">
+    <!-- ===== 경력 ===== -->
+    <section class="section" id="career">
+      <div class="section__header">
+        <h2 class="section__title">경력</h2>
+      </div>
+      <div class="simple-item">
+        <div class="simple-item__title">(주)씨에이웨이브</div>
+        <div class="simple-item__sub">2024.03 ~ 재직 중 (2년 3개월) · 개발팀 주임<br>클라우드/B2B 업무 솔루션 프론트엔드 개발</div>
+      </div>
+    </section>
+
+
+    <!-- ===== 프로젝트 ===== -->
+    <section class="section" id="projects">
       <div class="section__header">
         <h2 class="section__title">프로젝트</h2>
       </div>
 
-      <div class="experience-block">
-        <!-- 좌측: 회사 정보 -->
-        <div class="experience-block__company">
-          <div class="experience-block__company-name">(주)씨에이웨이브</div>
-          <div class="experience-block__role">개발팀 · 주임</div>
-          <div class="experience-block__period-wrap">2024.03 ~ 재직 중 (2년 3개월)</div>
-          <div class="experience-block__desc">클라우드/B2B 업무 솔루션<br>프론트엔드 개발</div>
+
+      <!-- ────── 프로젝트 1: 제조 AI 데이터 통합·중계 플랫폼 ────── -->
+      <article class="project">
+        <div class="project__header">
+          <h3 class="project__title">제조 AI 데이터 통합·중계 플랫폼</h3>
+          <p class="project__meta">2025.05 ~ 2026.03 | ㈜씨에이웨이브</p>
+          <p class="project__body">
+            제조 데이터를 수집·연계 및 관리하고 데이터 탐색 및 검증 기능을 제공하는 데이터 허브 플랫폼 프로젝트
+          </p>
         </div>
 
-        <!-- 우측: 프로젝트 목록 -->
-        <div class="experience-block__projects">
+        <div class="project__feature">
+          <h4 class="project__feature-title">다중 포맷 데이터 미리보기 컴포넌트 개발</h4>
+          <ul class="project__list">
+            <li>CSV, JSON, 이미지, 영상 등 5종 이상의 데이터 포맷을 지원하는 자체 브라우저 렌더링 컴포넌트 개발</li>
+            <li>데이터 확인을 위해 다운로드 할 필요없이 플랫폼 내부에서 즉각적인 데이터 탐색이 가능하도록 UX 개선</li>
+          </ul>
+        </div>
 
-          <div class="details-section">
-            <h3 class="details-section__title">제조 AI 데이터 통합·중계 플랫폼</h3>
-            <p class="details-section__body">제조 데이터를 수집·연계·관리하고, 데이터 탐색 및 검증 기능을 제공하는 데이터 허브 플랫폼 프로젝트</p>
-            <p class="details-section__meta">2025.05 ~ 2026.03 | 자체 플랫폼 R&D</p>
+        <div class="project__feature">
+          <h4 class="project__feature-title">SSE 기반 실시간 로그 스트리밍 뷰어 개발</h4>
+          <ul class="project__list">
+            <li>분석 서버와의 단방향 통신에 SSE 프로토콜을 적용하여 실시간 로그 모니터링 기능 구축</li>
+            <li>네트워크 단절에 대비한 자동 재연결 로직을 구현하여 로그 유실 방지 및 모니터링 안정성 확보</li>
+          </ul>
+        </div>
 
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">권한 기반 라우팅 및 접근 제어 시스템 구축</h4>
-              <ul class="details-section__list">
-                <li>사용자 역할에 따라 관리자 메뉴의 노출 여부를 동적으로 렌더링하고, `/admin` 하위의 라우트에 대한 접근을 제어하는 프라이빗 라우팅 로직 구현</li>
-              </ul>
-            </div>
+        <div class="project__feature">
+          <h4 class="project__feature-title">테스트 환경 세팅 및 AI 기반 개발 워크플로우 구축</h4>
+          <ul class="project__list">
+            <li>Vitest 및 React Testing Library을 활용하여 주요 UI 컴포넌트 및 핵심 비즈니스 로직에 대한 Unit Test 작성 수행</li>
+            <li>팀 전체 430여 개 규모의 테스트 케이스 기반을 구축하는 데 기여</li>
+            <li>AI 에이전트용 커스텀 스킬을 설계하여 컴포넌트 및 테스트 코드 작성을 규격화하고, 반복적인 초기 개발 소요 시간 단축</li>
+          </ul>
 
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">다중 포맷 데이터 미리보기 뷰어 개발</h4>
-              <ul class="details-section__list">
-                <li>연계된 다양한 형식의 데이터(JSON, CSV, 이미지 등)를 별도 다운로드 없이 브라우저에서 즉시 확인할 수 있는 통합 미리보기 뷰어 UI 개발</li>
-                <li>대규모 데이터를 효율적으로 렌더링하여 실무자의 데이터 탐색 및 검증 편의성을 대폭 개선</li>
-              </ul>
-            </div>
-
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">SSE(Server-Sent Events) 기반 실시간 로그 스트리밍 구현</h4>
-              <ul class="details-section__list">
-                <li>웹소켓보다 가볍고 단방향 통신에 적합한 SSE를 활용하여 분석 서버의 실시간 로그 스트리밍 기능 개발</li>
-                <li>스트리밍 중 토큰 만료 발생 시 즉각적으로 재발급 로직을 태워 스트림을 재연결하도록 구현하여 끊김 없는 사용자 경험 제공</li>
-                <li>AbortController를 활용하여 컴포넌트 언마운트 또는 다른 서버로 전환 시 기존 스트림 연결을 안전하게 해제하여 <span class="highlight">메모리 누수 원천 차단</span></li>
-              </ul>
-            </div>
-
-
-            <div class="details-section__group">
-              <h4 class="details-section__group-title" data-modal="project-1" onclick="openModal(this)"
-                style="cursor: pointer; text-decoration: underline; text-underline-offset: 3px;">프론트엔드 테스트 환경 구축</h4>
-              <ul class="details-section__list">
-                <li>Vitest와 React Testing Library를 도입하여 공통 로직 및 핵심 UI 컴포넌트에 대한 단위·컴포넌트 테스트 환경 구성</li>
-                <li>총 430여 개의 테스트 케이스를 작성하고, 핵심 비즈니스 로직 기준 <span class="highlight">테스트 커버리지 80% 이상</span>을 달성하여 리팩토링 안정성 확보</li>
-              </ul>
-            </div>
-
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">프롬프트 엔지니어링 기반 AI 에이전트 개발 워크플로우 구축</h4>
-              <ul class="details-section__list">
-                <li>AI 코딩 어시스턴트 환경에서 동작하는 커스텀 스킬(skill.md)들을 직접 정의하여, <span class="highlight">'코드 작성 ➔ 코드 리뷰 ➔ 테스트 코드
-                    자동 작성'</span>으로 이어지는
-                  지능형 워크플로우 설계</li>
-                <li>AI가 프로젝트의 구조와 컨벤션을 이해하고 피드백 및 테스트 코드를 생성하도록 프롬프트를 고도화하여 팀의 개발 생산성 대폭 향상</li>
-              </ul>
-            </div>
-          </div>
-
-          <hr class="project-divider" />
-
-          <div class="details-section">
-            <h3 class="details-section__title">클라우드 기반 원격접속·감사 솔루션 프론트엔드 기능 개선</h3>
-            <p class="details-section__meta">2025.03 ~ 2025.04 | 기아자동차 KCVG 시스템</p>
-            <p class="details-section__body">클라우드 기반 원격접속·감사 솔루션의 운영 중 발생한 결함을 수정해 화면 안정성 개선</p>
-            <ul class="details-section__list">
-              <li>사용자 대시보드, 원격접속 신청, 장비/커넥트 설정 등 주요 화면의 입력 검증 및 예외 처리 로직 보강</li>
-              <li>파일 첨부 기능의 업로드·삭제·개수 제한 등 엣지 케이스 대응 로직 구현</li>
-              <li>2차 인증·세션 만료·비밀번호 만료 등 인증 플로우 UI 안정화</li>
+          <div class="problem-solving">
+            <h5 class="problem-solving__label">문제 인식</h5>
+            <ul class="project__list">
+              <li>기존에는 Cypress 기반의 E2E 테스트를 활용하고 있었으나, 개발 과정에서 구조적인 무거움이 체감됨</li>
+              <li>"이 함수가 제대로 동작하는가?", "이 컴포넌트가 올바르게 렌더링되는가?"를 빠르게 확인하는 용도로는 Cypress가 과도한 도구라고 판단</li>
             </ul>
-          </div>
 
-          <hr class="project-divider" />
+            <h5 class="problem-solving__label">해결 과정</h5>
+            <div class="problem-solving__comparison">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">비교 항목</th>
+                    <th>Jest</th>
+                    <th>Vitest (선택)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Vite 통합</strong></td>
+                    <td>babel-jest 변환 필요, 별도 설정 복잡</td>
+                    <td>Vite 설정 그대로 공유 (<code>vite.config.ts</code>에 <code>test</code> 블록 추가)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>실행 속도</strong></td>
+                    <td>상대적으로 느림</td>
+                    <td>ESM 네이티브 지원으로 빠름</td>
+                  </tr>
+                  <tr>
+                    <td><strong>HMR 연동</strong></td>
+                    <td>별도 구성 필요</td>
+                    <td><code>vitest --watch</code>로 변경 파일만 즉시 재실행</td>
+                  </tr>
+                  <tr>
+                    <td><strong>호환성</strong></td>
+                    <td>jest-dom, RTL 완전 호환</td>
+                    <td>jest-dom, RTL <strong>동일하게 호환</strong> (<code>@testing-library/jest-dom</code>)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="problem-solving__note">
+                이미 Vite 기반 프로젝트였기 때문에, 별도의 번들러 설정 없이 <code>vite.config.ts</code>에 <code>test</code> 블록만 추가하면 되는 <strong>Vitest가 도입 비용이 가장 낮았습니다.</strong>
+              </p>
+            </div>
 
-          <div class="details-section">
-            <h3 class="details-section__title">클라우드 기반 병리 데이터 안심분석구역 솔루션 기능 개선</h3>
-            <p class="details-section__meta">2024.06 ~ 2024.10 | 한양대학교병원, 서울성모병원</p>
-            <p class="details-section__body">연구자가 병리 데이터를 분석하고, 결과 반출 및 비용 정산을 수행할 수 있도록 지원하는 안심분석구역 솔루션 프로젝트 기능 확장·개선
+            <h5 class="problem-solving__label">성과</h5>
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>지표</th>
+                  <th>수치</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>테스트 파일 수</td>
+                  <td><strong>70개</strong></td>
+                </tr>
+                <tr>
+                  <td>테스트 대상 유형</td>
+                  <td>유틸 함수, Zod 스키마, Zustand 스토어, 커스텀 훅, UI 컴포넌트</td>
+                </tr>
+                <tr>
+                  <td>테스트 실행 시간</td>
+                  <td>전체 약 <strong>2~3초</strong> (Vitest 병렬 실행)</td>
+                </tr>
+                <tr>
+                  <td>커버 영역</td>
+                  <td>공통 컴포넌트, 폼 검증, 트리 조작, 테이블 서비스, 인증 등</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="problem-solving__note">
+              테스트 자동화 도입으로 버그를 배포 전에 조기 검출하게 되었으며, 디버깅 시간도 체감할 수 있을 만큼 줄었습니다.
             </p>
-            <ul class="details-section__list">
-              <li>세금계산서 정산 관련 목록, 상세, 발행 요청, 상태 조회, 과금 조회 및 API 연동</li>
-              <li>데이터 활용 신청 및 연구 결과 반출 신청 프로세스 화면 개선</li>
-              <li>클라우드 자원 분석, 데이터 활용/반출 신청 현황을 확인할 수 있는 대시보드 UI 구성</li>
+          </div>
+        </div>
+
+        <div class="project__feature">
+          <h4 class="project__feature-title">사용자 권한 기반 화면 렌더링 제어</h4>
+          <ul class="project__list">
+            <li>전역으로 관리되는 사용자 역할 상태를 활용하여 관리자 화면 내 세부 컴포넌트 렌더링 분기 로직 구현</li>
+            <li>권한 등급에 따라 접근 가능한 뷰와 기능을 제한적으로 제공하여, 인가되지 않은 사용자의 민감한 제어 기능 접근을 차단하고 운영 안정성 제고</li>
+          </ul>
+        </div>
+      </article>
+
+      <hr class="project-divider" />
+
+
+      <!-- ────── 프로젝트 2: 원격접속·감사 솔루션 ────── -->
+      <article class="project">
+        <div class="project__header">
+          <h3 class="project__title">클라우드 기반 원격접속·감사 솔루션 프론트엔드 기능 개선</h3>
+          <p class="project__meta">2025.03 ~ 2025.04 | ㈜씨에이웨이브</p>
+          <p class="project__body">
+            클라우드 기반 원격접속·감사 솔루션의 운영 중 발생한 결함을 수정해 화면 안정성 개선
+          </p>
+        </div>
+
+        <div class="project__feature">
+          <ul class="project__list">
+            <li>사용자 대시보드, 원격접속 신청, 장비/커넥트 설정 등 주요 화면의 입력 검증 및 예외 처리 로직 보강</li>
+            <li>파일 첨부 기능의 업로드·삭제·개수 제한 등 엣지 케이스 대응 로직 구현</li>
+            <li>2차 인증·세션 만료·비밀번호 만료 등 인증 플로우 UI 안정화</li>
+          </ul>
+        </div>
+      </article>
+
+      <hr class="project-divider" />
+
+
+      <!-- ────── 프로젝트 3: 병리 데이터 안심분석구역 ────── -->
+      <article class="project">
+        <div class="project__header">
+          <h3 class="project__title">클라우드 기반 병리 데이터 안심분석구역 솔루션 기능 개선</h3>
+          <p class="project__meta">2024.06 ~ 2024.10 | ㈜씨에이웨이브</p>
+          <p class="project__body">
+            연구자가 병리 데이터를 분석하고, 결과 반출 및 비용 정산을 수행할 수 있도록 지원하는 안심분석구역 솔루션 프로젝트 기능 확장 및 개선
+          </p>
+        </div>
+
+        <div class="project__feature">
+          <ul class="project__list">
+            <li>세금계산서 정산 관련 목록, 상세, 발행 요청, 상태 조회, 과금 조회 및 API 연동</li>
+            <li>복잡한 데이터 활용 및 반출 신청 프로세스를 직관적인 UI로 개편하여 사용자 편의성 증대</li>
+            <li>클라우드 자원 및 신청 현황 데이터를 한눈에 파악할 수 있는 통합 대시보드 UI를 구축하여 운영 가시성 확보</li>
+          </ul>
+        </div>
+      </article>
+
+      <hr class="project-divider" />
+
+
+      <!-- ────── 프로젝트 4: 클라우드 빌링 솔루션 ────── -->
+      <article class="project">
+        <div class="project__header">
+          <h3 class="project__title">클라우드 빌링 솔루션 기능 개선 및 운영</h3>
+          <p class="project__meta">2024.03 ~ 현재 | ㈜씨에이웨이브</p>
+          <p class="project__body">
+            기존 클라우드 빌링 솔루션의 운영 안정성과 사용자 편의성 개선 및 백오피스 기능 개발
+          </p>
+        </div>
+
+        <div class="project__feature">
+          <h4 class="project__feature-title">RBAC 기반 관리자 어드민 페이지 신규 구축</h4>
+          <ul class="project__list">
+            <li>관리자 역할에 따라 접근 가능한 권한과 자원을 분리하여 할당할 수 있는 계층형 권한 관리 시스템의 프론트엔드 화면 구현</li>
+            <li>라우터 및 UI 컴포넌 레벨에서 렌더링을 동적으로 제어하여 시스템 보안성을 강화하고 관리자 계정 운영의 효율성 증대</li>
+          </ul>
+        </div>
+
+        <div class="project__feature">
+          <h4 class="project__feature-title">OTP 기반 2차 인증(2FA) 등록 및 관리 프로세스 고도화</h4>
+          <ul class="project__list">
+            <li>기존 운영 중인 OTP 기반 2차 인증 시스템에 대한 사용자 인증 수단 등록, 조회 및 해제 관리 화면 구현</li>
+            <li>인증 수단 관리 프로세스를 UI로 제공하여 사용자 및 관리자의 계정 보안 유지보수 편의성 개선</li>
+          </ul>
+        </div>
+
+        <div class="project__feature">
+          <h4 class="project__feature-title">Zod 및 React-Hook-Form 연동을 통한 폼 검증 로직 최적화</h4>
+          <ul class="project__list">
+            <li>기존 UI 컴포넌트에 수동으로 주입하던 정규식 및 커스텀 검증 로직을 Zod 스키마 기반으로 중앙화</li>
+            <li>다수의 입력 필드가 존재하는 복잡한 정산 폼 등에서 필수 검증 누락에 따른 휴먼 에러를 사전 차단하여 코드 안정성 및 유지보수성 향상</li>
+          </ul>
+
+          <div class="problem-solving">
+            <h5 class="problem-solving__label">문제 인식</h5>
+            <ul class="project__list">
+              <li>수십 개의 입력 필드가 있는 정산 폼을 개발할 때, 각 UI 컴포넌트의 <code>register</code> 속성에 정규식이나 커스텀 검증 함수를 개발자가 일일이 수동으로 주입해야 했음</li>
+              <li>폼이 복잡해질수록 개발자의 실수로 특정 필드에 필수 검증 로직(예: '숫자만 입력 허용' 등)을 누락하는 휴먼 에러가 빈번하게 발생</li>
+            </ul>
+
+            <h5 class="problem-solving__label">기존 코드 (Before)</h5>
+            <pre class="code-block"><code>&lt;DetailInput
+  register={form.register('businessField', {
+    ...Object.assign(
+      formValidate.empty('업태는 필수 정보 입니다'),
+      formCount('업태명이 너무 깁니다. (최대 35글자)', 0, 35),
+      formValidate.text('문자, 숫자, 공백, 일부 특수문자만 입력 가능합니다.')
+    ),
+  })}
+/&gt;</code></pre>
+            <p class="problem-solving__note">
+              → 개발자가 <code>register</code>에 검증 함수를 직접 조합해야 하므로, 필드가 많아질수록 누락 위험이 증가
+            </p>
+
+            <h5 class="problem-solving__label">해결 방법</h5>
+            <ul class="project__list">
+              <li><code>react-hook-form</code>에 <code>Zod</code> 스키마를 결합하여, 뷰(UI) 컴포넌트 내부에서 검증 로직을 완전히 분리</li>
+              <li>필드별 검증 룰을 최상단의 Zod 스키마(<code>z.object</code>) 한 곳에서만 명세하여, 개발자가 개별 인풋 컴포넌트에 검증 함수를 달아주는 것을 깜빡하더라도 Zod 스키마가 폼 제출을 시스템적으로 차단</li>
+            </ul>
+
+            <h5 class="problem-solving__label">성과</h5>
+            <ul class="project__list">
+              <li>폼 검증 관련 <span class="highlight">휴먼 에러 원천 차단</span> — 스키마에 정의되지 않은 데이터는 제출 자체가 불가능</li>
+              <li>새로운 폼 개발 시 검증 로직 작성 시간 단축 및 코드 리뷰 포인트 감소</li>
+              <li>검증 로직의 단일 소스(Zod 스키마)로 인해 유지보수성과 일관성 대폭 향상</li>
             </ul>
           </div>
-
-          <hr class="project-divider" />
-
-          <div class="details-section">
-            <h3 class="details-section__title">클라우드 빌링 솔루션 기능 개선 및 운영</h3>
-            <p class="details-section__body">기존 클라우드 빌링 솔루션의 운영 안정성과 사용자 편의성 개선을 위한 프로젝트</p>
-
-            <p class="details-section__meta">2024.03 ~ 현재 | ㈜씨에이웨이브, ㈜아이티아이즈</p>
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">RBAC 기반 어드민 신규 구축</h4>
-              <ul class="details-section__list">
-                <li>권한, 자원, 역할을 동적으로 관리할 수 있는 관리자 페이지 신규 구축</li>
-              </ul>
-            </div>
-
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">2차 인증(2FA) 보안 고도화</h4>
-              <ul class="details-section__list">
-                <li>2차 인증(2FA) 시스템의 편의성을 개선하고, 인증 수단 등록 및 해제 관리 기능 구현</li>
-              </ul>
-            </div>
-
-            <div class="details-section__group">
-              <h4 class="details-section__group-title" data-modal="project-4" onclick="openModal(this)"
-                style="cursor: pointer; text-decoration: underline; text-underline-offset: 3px;">Zod 도입을 통한 폼 검증 로직 최적화
-              </h4>
-              <ul class="details-section__list">
-                <li>기존 React Hook Form 환경에 Zod를 결합하여, 뷰(UI) 컴포넌트에 파편화되어 있던 유효성 검사 로직을 <span class="highlight">스키마 레벨로 분리</span></li>
-                <li>날짜 교차 검증, 비율 유효성 등 복잡한 비즈니스 규칙을 Zod 스키마로 명세하여, 개발자 휴먼 에러를 방지하고 코드 유지보수성을 대폭 향상</li>
-              </ul>
-            </div>
-
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">업무 워크플로우를 고려한 탭 구조 개편 및 상태 최적화</h4>
-              <ul class="details-section__list">
-                <li>복잡한 단일 페이지 구조를 사용자의 업무 시나리오에 맞춘 탭 기반 UI로 전면 리팩토링</li>
-                <li>탭 전환 시 입력 데이터가 초기화되지 않도록 상태를 유지시켜 실무자의 업무 효율성 개선</li>
-              </ul>
-            </div>
-
-
-            <div class="details-section__group">
-              <h4 class="details-section__group-title">전역 에러 핸들링 시스템 구축</h4>
-              <ul class="details-section__list">
-                <li>Axios Interceptor를 연동하여 백엔드의 비즈니스 에러 코드를 프론트엔드에서 공통으로 캐치하고, 알림(Toast)으로 처리하는 <span class="highlight">중앙 집중식 에러
-                  핸들링</span> 로직 구현</li>
-              </ul>
-            </div>
-
-          </div>
-
         </div>
-      </div>
 
+        <div class="project__feature">
+          <h4 class="project__feature-title">복잡한 단일 폼 UI의 탭 구조 개편 및 렌더링 최적화</h4>
+          <ul class="project__list">
+            <li>방대한 데이터가 나열된 기존의 단일 폼 화면을 사용자의 업무 워크플로우에 맞춰 논리적인 탭 구조로 전면 개편</li>
+            <li>긴 입력 화면으로 인한 사용자 피로도를 낮춰 UX를 개선하고, 안정적인 폼 상태 유지 및 화면 렌더링 성능 최적화 달성</li>
+          </ul>
+        </div>
+
+        <div class="project__feature">
+          <h4 class="project__feature-title">프론트엔드 에러 메시지 통합 관리 모듈 구현 및 UX 개선</h4>
+          <ul class="project__list">
+            <li>백엔드에서 반환되는 예외 상태 및 에러 코드를 프론트엔드 규격에 맞춰 재가공하는 전용 예외 처리 훅 구현</li>
+            <li>장애 발생 시 불필요한 개발자 용어 노출을 차단하고 직관적인 사용자 안내 제공</li>
+          </ul>
+        </div>
+
+      </article>
     </section>
 
 
-    <!-- 기술 스택 -->
+    <!-- ===== 기술 스택 ===== -->
     <section class="section" id="skills">
       <div class="section__header">
         <h2 class="section__title">기술 스택</h2>
       </div>
-      <div class="stack-group__tags">
-        <span class="stack-tag">HTML / CSS</span>
-        <span class="stack-tag">JavaScript</span>
-        <span class="stack-tag">TypeScript</span>
-        <span class="stack-tag">React</span>
-        <span class="stack-tag">Tailwind CSS</span>
-        <span class="stack-tag">Zustand</span>
-        <span class="stack-tag">React Query</span>
-        <span class="stack-tag">React Hook Form</span>
-        <span class="stack-tag">Zod</span>
-        <span class="stack-tag">Vitest</span>
-        <span class="stack-tag">React Testing Library</span>
+      <div class="skill-category">
+        <h3 class="skill-category__label">Core</h3>
+        <div class="stack-group__tags">
+          <span class="stack-tag">HTML / CSS</span>
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__label">Framework & Library</h3>
+        <div class="stack-group__tags">
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Zustand</span>
+          <span class="stack-tag">React Query</span>
+          <span class="stack-tag">React Hook Form</span>
+          <span class="stack-tag">Zod</span>
+          <span class="stack-tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="skill-category__label">Testing</h3>
+        <div class="stack-group__tags">
+          <span class="stack-tag">Vitest</span>
+          <span class="stack-tag">React Testing Library</span>
+        </div>
       </div>
     </section>
 
 
-    <!-- 교육 -->
+    <!-- ===== 교육 ===== -->
     <section class="section" id="education">
       <div class="section__header">
         <h2 class="section__title">교육</h2>
@@ -224,7 +363,7 @@
       </div>
     </section>
 
-    <!-- 자격증 -->
+    <!-- ===== 자격증 ===== -->
     <section class="section" id="certificates">
       <div class="section__header">
         <h2 class="section__title">자격증</h2>
@@ -239,126 +378,7 @@
       </div>
     </section>
 
-
-
   </div>
-
-  <!-- 모달 -->
-  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
-    <div class="modal" onclick="event.stopPropagation()">
-      <button class="modal__close" onclick="closeModal()">&times;</button>
-      <div class="modal__content" id="modalContent"></div>
-    </div>
-  </div>
-
-  <template id="project-1">
-    <h2>프론트엔드 테스트 자동화 도입</h2>
-    <h5 class="modal__label">원인 분석: <strong>단위 테스트 필요성</strong></h5>
-    <ul class="details-section__list">
-      <li>테스트는 Cypress 기반의 E2E 테스트를 사용하기로 했습니다. 하지만 개발 과정에서 Cypress의 구조적인 무거움이 체감되었습니다.</li>
-      <li>Cypress는 사용자 시나리오 전체를 검증하는 데는 적합하지만, 개발 중에 "이 함수가 제대로 동작하는가?", "이 컴포넌트가 올바르게 렌더링되는가?"를 빠르게 확인하는 용도로는 과도한 도구로
-        판단하였습니다.</li>
-    </ul>
-
-    <h5 class="modal__label">해결 방법: <strong>테스트 전략 설계 및 도입</strong></h5>
-    <table class="modal__table">
-      <thead>
-        <tr>
-          <th style="width: 25%;">비교 항목</th>
-          <th>Jest</th>
-          <th>Vitest (선택)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Vite 통합</strong></td>
-          <td>babel-jest 변환 필요, 별도 설정 복잡</td>
-          <td>Vite 설정 그대로 공유 (<code>vite.config.ts</code>에 <code>test</code> 블록 추가)</td>
-        </tr>
-        <tr>
-          <td><strong>실행 속도</strong></td>
-          <td>상대적으로 느림</td>
-          <td>ESM 네이티브 지원으로 빠름</td>
-        </tr>
-        <tr>
-          <td><strong>HMR 연동</strong></td>
-          <td>별도 구성 필요</td>
-          <td><code>vitest --watch</code>로 변경 파일만 즉시 재실행</td>
-        </tr>
-        <tr>
-          <td><strong>호환성</strong></td>
-          <td>jest-dom, RTL 완전 호환</td>
-          <td>jest-dom, RTL <strong>동일하게 호환</strong> (<code>@testing-library/jest-dom</code>)</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="details-section__body" style="font-size: 0.85rem;">
-      참고로 이미 Vite 기반 프로젝트였기 때문에, 별도의 번들러 설정 없이 <code>vite.config.ts</code>에 <code>test</code> 블록만 추가하면 되는
-      <strong>Vitest가 도입 비용이 가장 낮았습니다.</strong>
-    </p>
-
-    <h5 class="modal__label">결과</h5>
-    <table class="modal__table">
-      <thead>
-        <tr>
-          <th>지표</th>
-          <th>수치</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>테스트 파일 수</td>
-          <td><strong>70개</strong></td>
-        </tr>
-        <tr>
-          <td>테스트 대상 유형</td>
-          <td>유틸 함수, Zod 스키마, Zustand 스토어, 커스텀 훅, UI 컴포넌트</td>
-        </tr>
-        <tr>
-          <td>테스트 실행 시간</td>
-          <td>전체 약 <strong>2~3초</strong> (Vitest 병렬 실행)</td>
-        </tr>
-        <tr>
-          <td>커버 영역</td>
-          <td>공통 컴포넌트, 폼 검증, 트리 조작, 테이블 서비스, 인증 등</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="details-section__body" style="font-size: 0.85rem;">
-      테스트 자동화 도입으로 버그를 배포 전에 잡게 되었으며 디버깅 시간도 줄었다고 체감하고 있습니다.
-    </p>
-
-  </template>
-
-  <template id="project-4">
-    <h2>Zod 도입을 통한 유효성 검사 코드 개선 및 폼 버그 해결</h2>
-
-
-    <h5 class="modal__label">원인 분석: <strong>복잡한 검증 로직과 개발자 휴먼 에러 발생</strong></h5>
-    <ul class="details-section__list">
-      <li>기존에는 수십 개의 입력 필드가 있는 정산 폼을 개발할 때, 각 UI 컴포넌트의 <code>register</code> 속성에 정규식이나 커스텀 검증 함수를 개발자가 일일이 수동으로 주입해야
-        했습니다.
-      </li>
-      <li>폼이 복잡해질수록 개발자의 실수로 특정 필드에 필수 검증 로직(예: '숫자만 입력 허용' 등)을 누락하는 휴먼 에러가 빈번하게 발생했습니다.</li>
-    </ul>
-
-    <pre class="modal__code"><code>&lt;DetailInput
-  register={form.register('businessField', {
-    ...Object.assign(
-      formValidate.empty('업태는 필수 정보 입니다'),
-      formCount('업태명이 너무 깁니다. (최대 35글자)', 0, 35),
-      formValidate.text('문자, 숫자, 공백, 일부 특수문자만 입력 가능합니다.')
-    ),
-  })}
-/&gt;</code></pre>
-
-    <h5 class="modal__label">해결 방법: <strong>Zod 도입 후 검증 로직 분리</strong></h5>
-    <ul class="details-section__list">
-      <li><code>react-hook-form</code>에 <code>Zod</code> 스키마를 결합하여, 뷰(UI) 컴포넌트 내부에서 검증 로직을 완전히 분리</li>
-      <li>필드별 검증 룰을 최상단의 Zod 스키마(<code>z.object</code>) 한 곳에서만 명세. 개발자가 개별 인풋 컴포넌트에 검증 함수를 달아주는 것을 깜빡하더라도, Zod 스키마가 폼
-        제출을 시스템적으로 차단</li>
-    </ul>
-  </template>
 
   <!-- 인쇄 버튼 -->
   <button class="print-btn" onclick="window.print()" title="PDF로 저장">Print</button>
