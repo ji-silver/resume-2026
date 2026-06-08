@@ -63,6 +63,8 @@ body {
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -294,12 +296,14 @@ code {
 }
 
 .problem-solving__label {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color-problem-label);
-  margin: 16px 0 8px;
-  padding-left: 12px;
-  border-left: 3px solid var(--color-accent);
+  color: var(--color-text-primary);
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 24px 0 10px;
+  display: block;
 }
 
 .problem-solving__label:first-child {
@@ -311,6 +315,19 @@ code {
   color: var(--color-text-secondary);
   line-height: 1.8;
   margin-top: 8px;
+}
+
+.comparison-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.retrospective {
+  display: block;
+  margin-top: 14px;
 }
 
 .problem-solving__comparison {
@@ -357,12 +374,12 @@ code {
 
 .code-block code {
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-  font-size: 0.92rem;
-  line-height: 1.7;
-  color: #24292e;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
   background: transparent;
   padding: 0;
-  white-space: pre;
+  border-radius: 0;
 }
 
 
@@ -393,7 +410,7 @@ code {
   background: var(--color-tag-bg);
   border: 1px solid var(--color-tag-border);
   border-radius: 100px;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   color: var(--color-tag-text);
 }
 
@@ -548,10 +565,10 @@ code {
   .project {
     margin-bottom: 20px;
   }
-
   .project__feature {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    /* 긴 기능 블록(트러블슈팅 포함)이 통째로 다음 장으로 넘어가 여백이 생기지 않도록 내부 잘림 허용 */
+    page-break-inside: auto;
+    break-inside: auto;
   }
 
   .project-divider {
@@ -562,8 +579,8 @@ code {
   .problem-solving {
     background: transparent;
     border-color: #e0e0e0;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
   }
 
   .code-block {
