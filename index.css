@@ -415,7 +415,7 @@ code {
 }
 
 
-/* ===== 단순 항목 (학력/자격/교육) ===== */
+/* ===== 단순 항목 ===== */
 .simple-item {
   margin-bottom: 14px;
 }
@@ -594,8 +594,6 @@ code {
   }
 
   #skills,
-  #education,
-  #certificates,
   .simple-item {
     page-break-inside: avoid;
     break-inside: avoid;
