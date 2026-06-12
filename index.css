@@ -201,7 +201,7 @@ code {
 }
 
 .project__title {
-  font-size: 1.2rem;
+  font-size: 1.28rem;
   font-weight: 700;
   color: var(--color-text-primary);
   margin-bottom: 6px;
@@ -332,6 +332,78 @@ code {
 
 .problem-solving__comparison {
   margin-top: 4px;
+}
+
+/* ===== 주요 프로젝트 문제 해결 흐름 ===== */
+.project--case-study .project__feature {
+  margin-bottom: 34px;
+}
+
+.project--case-study .project__feature:last-child {
+  margin-bottom: 0;
+}
+
+.project--case-study .problem-solving {
+  counter-reset: problem-flow;
+  margin-top: 14px;
+  padding: 4px 0 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.project--case-study .problem-solving__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0 7px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: var(--color-text-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+.project--case-study .problem-solving__label:first-child {
+  margin-top: 0;
+}
+
+.project--case-study .problem-solving__label::before {
+  counter-increment: problem-flow;
+  content: counter(problem-flow, decimal-leading-zero);
+  flex: 0 0 auto;
+  color: var(--color-text-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.project--case-study .problem-solving__label::after {
+  content: '';
+  flex: 1 1 auto;
+  height: 1px;
+  margin-left: 4px;
+  background: var(--color-problem-border);
+}
+
+.project--case-study .project__list,
+.project--case-study .problem-solving__note,
+.project--case-study .problem-solving__comparison {
+  margin-top: 0;
+}
+
+.project--case-study .comparison-table {
+  margin-top: 12px;
+}
+
+.project--case-study .problem-solving > .project__list {
+  margin-bottom: 0;
+}
+
+.project--case-study .problem-solving__note {
+  padding-top: 0;
 }
 
 
@@ -518,6 +590,18 @@ code {
 
   .problem-solving {
     padding: 16px;
+  }
+
+  .project--case-study .problem-solving {
+    padding: 2px 0 0;
+  }
+
+  .project--case-study .problem-solving__label:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .project--case-study .problem-solving__label {
+    font-size: 0.88rem;
   }
 }
 
