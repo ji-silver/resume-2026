@@ -242,6 +242,7 @@ code {
 
 /* ===== 프로젝트 기능 블록 ===== */
 .project__feature {
+  padding-top: 4px;
   margin-bottom: 24px;
 }
 
@@ -250,7 +251,7 @@ code {
 }
 
 .project__feature-title {
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 600;
   color: var(--color-text-primary);
   margin-bottom: 6px;
@@ -360,7 +361,7 @@ code {
   padding: 0;
   background: transparent;
   border-radius: 0;
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   font-size: 0.88rem;
   font-weight: 700;
   line-height: 1.55;
@@ -378,14 +379,6 @@ code {
   color: var(--color-text-accent);
   font-size: 0.72rem;
   font-weight: 700;
-}
-
-.project--case-study .problem-solving__label::after {
-  content: '';
-  flex: 1 1 auto;
-  height: 1px;
-  margin-left: 4px;
-  background: var(--color-problem-border);
 }
 
 .project--case-study .project__list,
